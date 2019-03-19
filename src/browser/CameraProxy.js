@@ -102,7 +102,6 @@ function capture (success, errorCallback, opts) {
 
     var successCallback = function (stream) {
         localMediaStream = stream;
-        // video.src = window.URL.createObjectURL(localMediaStream);
         video.srcObject = localMediaStream;
         video.play();
 
